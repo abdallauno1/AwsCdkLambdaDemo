@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using cdk;
 
 namespace AwsCdkLambdaDemo
 {
@@ -10,7 +11,7 @@ namespace AwsCdkLambdaDemo
         public static void Main(string[] args)
         {
             var app = new App();
-            new AwsCdkLambdaDemoStack(app, "AwsCdkLambdaDemoStack", new StackProps
+            new FooBarLambdasStack(app, "FooBarLambdasStack", new StackProps
             {
                 // If you don't specify 'env', this stack will be environment-agnostic.
                 // Account/Region-dependent features and context lookups will not work,
